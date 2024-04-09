@@ -29,7 +29,7 @@ export default async function Noun({
         <div className="project__paragraph">
           <p className="project__paragraph">
             {t("about-infinitive")}
-            <b> "{t("what-to-do")}"</b>.
+            <b> 22322"{t("what-to-do")}"</b>.
           </p>
           <span>
             {t("infinitive-has-marker")} <b>å</b> :
