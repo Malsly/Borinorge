@@ -47,7 +47,7 @@
   "ordbokene-explanatory-dictionary": "Norsk forklarende ordbok",
   "click-on-vis": "for å se ordets former, klikk på",
   "tables-forms-voicing": "Ønsker du å finne tabeller med verbformer og stemmebruk, samt mer informasjon om når du skal bruke hvilken form, hvordan partisipp og passiv stemme dannes, og mye mer",
-  "welcome-to-telegram": "Velkommen til Telegram \"Норвежский? Легко!\"",
+  "welcome-to-telegram": "Velkommen til Telegram",
   "v1": "",
   "v2": "",
   "v3": "",
@@ -60,5 +60,8 @@
   "nv1": "",
   "nv2": "",
   "nv3": "",
-  "r": ""
+  "r": "",
+  "dict-dictionary": "Norwegian-English dictionary ",
+  "with-transcription": "(has transcription and word phrases, and if you enter a sentence, translates individual words)",
+  "norsklett": "\"Норвежский? Легко!\" "
 }

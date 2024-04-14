@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { greatVibes } from "../../../fonts";
-import { useTranslation } from "../../../i18n";
 import { Breadcrumbs } from "../../components/breadcrumbs";
+import { useTranslation } from "../../../i18n";
 import { Footer } from '../../components/footer'
 
 export default async function Noun({
@@ -30,10 +31,10 @@ export default async function Noun({
         <div className="project__paragraph">
           <p className="project__paragraph">
             {t("about-infinitive")}
-            <b>&quot;{t("what-to-do")}&quot;</b>.
+            <b> &quot;{t("what-to-do")}&quot;</b>.
           </p>
           <span>
-            {t("infinitive-has-marker")} <b>å</b> :
+            {t("infinitive-has-marker")} <b>å</b>:
           </span>
           <ul className="pl-10">
             <li>å jobbe - {t("work")}</li>
@@ -201,7 +202,7 @@ export default async function Noun({
               ({t("click-on-vis")} vis bøyning)
             </li>
             <li>
-              {t("dict-dictionary")}Dict
+              {t("dict-dictionary")} Dict
               <p>
                 <a
                   href={t("dict-link")}
@@ -214,20 +215,20 @@ export default async function Noun({
               {t("with-transcription")}
             </li>
           </ul>
-          <p className="project__paragraph">{t("tables-forms-voicing")}?</p>
         </div>
 
         {/* Реклама телеграмма */}
-        <div className="project__paragraph">
-          <b>{t("welcome-to-telegram")} &nbsp;</b>
-          <a
-            href="https://t.me/NorskLett"
-            target="_blank"
-            className="project__link"
-          >
-            t.me/NorskLett
-          </a>
-        </div>
+        {lng !== "en" && (
+          <>
+            <p className="project__paragraph">{t("tables-forms-voicing")}?</p>
+            <p className="project__paragraph pb-4">{t("welcome-to-telegram")}</p>
+            <div className="target-action pt-0">
+              <Link href="https://t.me/norsklett" className="target-action__link">
+                {t("norsklett")}
+              </Link>
+            </div>
+          </>
+        )}
       </main>
       <Footer />
     </>
