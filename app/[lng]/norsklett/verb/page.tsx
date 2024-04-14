@@ -1,7 +1,8 @@
-import Link from "next/link";
 import { greatVibes } from "../../../fonts";
-import { Breadcrumbs } from "../../components/breadcrumbs";
 import { useTranslation } from "../../../i18n";
+import { Breadcrumbs } from "../../components/breadcrumbs";
+import { Footer } from '../../components/footer'
+
 export default async function Noun({
   params: { lng },
 }: {
@@ -15,7 +16,7 @@ export default async function Noun({
           <h1
             className={`header__title header__title--home ${greatVibes.variable}`}
           >
-            {t("title")}
+            Verb
           </h1>
         </div>
       </header>
@@ -29,7 +30,7 @@ export default async function Noun({
         <div className="project__paragraph">
           <p className="project__paragraph">
             {t("about-infinitive")}
-            <b> 22322"{t("what-to-do")}"</b>.
+            <b>&quot;{t("what-to-do")}&quot;</b>.
           </p>
           <span>
             {t("infinitive-has-marker")} <b>å</b> :
@@ -172,7 +173,7 @@ export default async function Noun({
         {/* Дополнительные материалы */}
         <div className="project__paragraph">
           {t("look-up-verb")}:
-          <ul className="list-outside list-disc ml-10">
+          <ul className="list-outside list-disc pl-4 sm:pl-6 md:pl-10">
             <li>
               {t("russian-norwegian-dictionary")}
               <p>
@@ -199,6 +200,19 @@ export default async function Noun({
               </p>
               ({t("click-on-vis")} vis bøyning)
             </li>
+            <li>
+              {t("dict-dictionary")}Dict
+              <p>
+                <a
+                  href={t("dict-link")}
+                  target="_blank"
+                  className="project__link"
+                >
+                  dict.com
+                </a>
+              </p>
+              {t("with-transcription")}
+            </li>
           </ul>
           <p className="project__paragraph">{t("tables-forms-voicing")}?</p>
         </div>
@@ -215,6 +229,7 @@ export default async function Noun({
           </a>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
