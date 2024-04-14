@@ -223,7 +223,7 @@ export default async function Noun({
             <p className="project__paragraph">{t("tables-forms-voicing")}?</p>
             <p className="project__paragraph pb-4">{t("welcome-to-telegram")}</p>
             <div className="target-action pt-0">
-              <Link href="https://t.me/norsklett" className="target-action__link">
+              <Link href="https://t.me/norsklett" target="_blank" className="target-action__link">
                 {t("norsklett")}
               </Link>
             </div>
